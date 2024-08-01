@@ -1,8 +1,9 @@
-import { Footer } from "./components";
+import { Footer, FooterBanner } from "./components";
 
 export default function App() {
   return (
     <>
+      <FooterBanner />
       <Footer />
     </>
   );

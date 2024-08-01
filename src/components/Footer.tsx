@@ -15,7 +15,14 @@ export default function Footer() {
 
       <div className="flex items-center gap-[1.06rem]">
         {socials.map(({ id, icon, title }) => (
-          <img key={id} src={icon} alt={title} />
+          <img
+            key={id}
+            src={icon}
+            alt={title}
+            width={24}
+            height={24}
+            className="w-full"
+          />
         ))}
       </div>
     </footer>
