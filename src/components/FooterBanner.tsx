@@ -16,7 +16,7 @@ import {
 
 export default function FooterBanner() {
   return (
-    <div className="px-[12.5%] flex flex-col gap-[8.16rem] pt-[12.5rem]">
+    <div className="px-[12.5%] bg-[#4fd2551a] flex flex-col gap-[8.16rem] pt-[12.5rem]">
       <div className="flex gap-[9.81rem] ">
         <div className="flex flex-col gap-10 max-w-[27.125rem] w-full">
           <span className="flex flex-col gap-4">
