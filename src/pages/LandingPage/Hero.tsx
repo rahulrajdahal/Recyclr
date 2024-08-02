@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <div className="flex relative gap-[8.48rem] px-[12.5%] mb-[8.74rem]">
-      <div className="w-full flex gap-[11.25rem] flex-col max-w-[41.4375rem]">
+      <div className="w-full flex gap-10 md:gap-[11.25rem] flex-col max-w-[41.4375rem]">
         <span className="flex flex-col gap-5">
           <strong
             data-greet="Hey"
