@@ -13,6 +13,7 @@ import {
   Toy,
   TrashWide,
 } from "../assets/illustrations";
+import Button from "./Button";
 
 export default function FooterBanner() {
   return (
@@ -29,9 +30,7 @@ export default function FooterBanner() {
             </p>
           </span>
 
-          <button className=" bg-[#4FD255] rounded-[0.875rem] max-h-[3.75rem] w-fit px-[2.94rem] py-5 h-full text-[#333] text-lg leading-normal font-semibold">
-            Start Recycling
-          </button>
+          <Button />
         </div>
 
         <div className="flex items-center flex-row w-full relative justify-between">
@@ -40,35 +39,35 @@ export default function FooterBanner() {
             alt={"recyclr - clean bottles"}
             width={94}
             height={94}
-            className="w-[5.875rem]  absolute top-20 h-[5.875rem]"
+            className="w-[5.875rem] animate-hover  absolute top-20 h-[5.875rem]"
           />
           <img
             src={AppleBag}
             alt={"recyclr - apple bag"}
             width={110}
             height={110}
-            className="w-[6.875rem] left-[5.69rem] absolute -bottom-12 h-[6.875rem]"
+            className="w-[6.875rem] animate-hovermd  left-[5.69rem] absolute -bottom-12 h-[6.875rem]"
           />
           <img
             src={Plastic}
             alt={"recyclr - plastic"}
             width={52}
             height={52}
-            className="w-[3.25rem] left-[16.45rem] relative top-[2.81rem] h-[3.25rem]"
+            className="w-[3.25rem] animate-hoversm left-[16.45rem] relative top-[2.81rem] h-[3.25rem]"
           />
           <img
             src={Sandwich}
             alt={"recyclr - sandwich"}
             width={89.7}
             height={89.7}
-            className="w-[5.60606rem] left-[24.97rem] absolute -bottom-24  h-[5.60606rem]"
+            className="w-[5.60606rem] animate-hovermd  left-[24.97rem] absolute -bottom-24  h-[5.60606rem]"
           />
           <img
             src={Knuckles}
             alt={"recyclr - knuckles"}
             width={66}
             height={66}
-            className="w-[4.125rem] left-[6.96rem] relative -top-10 h-[4.125rem]"
+            className="w-[4.125rem] animate-hover  left-[6.96rem] relative -top-10 h-[4.125rem]"
           />
 
           <img
@@ -76,7 +75,7 @@ export default function FooterBanner() {
             alt={"recyclr - coffee cup"}
             width={98.7}
             height={98.7}
-            className="w-[6.1295rem] right-[6.96rem] top-20 relative h-[6.1295rem]"
+            className="w-[6.1295rem] animate-hoversm  right-[6.96rem] top-20 relative h-[6.1295rem]"
           />
         </div>
       </div>
@@ -105,7 +104,7 @@ export default function FooterBanner() {
             alt={"recyclr - bag"}
             width={45.48}
             height={45.48}
-            className="w-[2.84256rem] relative -top-[6.37rem] right-[0.8rem] h-[2.84256rem]"
+            className="w-[2.84256rem] animate-hover relative -top-[6.37rem] right-[0.8rem] h-[2.84256rem]"
           />
           <img
             src={RecyclingBox}

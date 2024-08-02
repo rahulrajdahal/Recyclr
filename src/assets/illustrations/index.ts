@@ -4,6 +4,7 @@ export { default as Bin } from "./bin.svg";
 export { default as Bottles } from "./bottles.svg";
 export { default as CleanBottle } from "./clean-bottle.svg";
 export { default as CoffeeCup } from "./coffee-cup.svg";
+export { default as HeroIllustration } from "./hero.svg";
 export { default as Juice } from "./juice.svg";
 export { default as Knuckles } from "./knuckles.svg";
 export { default as Landing } from "./landing.svg";
