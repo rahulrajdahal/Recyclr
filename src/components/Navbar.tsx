@@ -1,4 +1,5 @@
-import { Logo } from "../assets/icons";
+import { Logo, Menu } from "../assets/icons";
+import { useWindowSize } from "../hooks";
 import Button from "./Button";
 
 const links = [
@@ -8,6 +9,8 @@ const links = [
 ];
 
 export default function Navbar() {
+  const { width } = useWindowSize();
+
   return (
     <nav className="sticky z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-[11.25rem] py-[3.75rem]">
       <div className="flex items-center gap-2">
@@ -24,21 +27,29 @@ export default function Navbar() {
         </strong>
       </div>
 
-      <div className="flex items-center gap-[3.75rem]">
-        <ul className="flex gap-[3.75rem] items-center">
-          {links.map(({ id, title }) => (
-            <li key={id}>
-              <a
-                href="#"
+      {width < 960 ? (
+        <img
+          src={Menu}
+          alt="recyclr - menu"
+          width={30}
+          height={30}
+          className="w-[1.875rem] h-[1.875rem]"
+        />
+      ) : (
+        <div className="flex items-center gap-[3.75rem]">
+          <ul className="flex gap-[3.75rem] items-center">
+            {links.map(({ id, title }) => (
+              <li
+                key={id}
                 className="text-[#333] text-lg leading-normal font-semibold"
               >
                 {title}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <Button />
-      </div>
+              </li>
+            ))}
+          </ul>
+          <Button />
+        </div>
+      )}
     </nav>
   );
 }

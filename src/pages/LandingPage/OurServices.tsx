@@ -28,15 +28,15 @@ export default function OurServices() {
   return (
     <div className="flex mb-[8.75rem] flex-col items-center gap-[3.75rem] justify-center">
       <span className="flex flex-col gap-3 items-center">
-        <strong className="text-[#333] text-5xl leading-[3rem] font-bold">
+        <strong className="text-[#333] text-center text-5xl leading-[3rem] font-bold">
           Our Services
         </strong>
-        <p className="text-[#727272] text-lg leading-6 font-medium">
+        <p className="text-[#727272] text-center text-lg leading-6 font-medium">
           Learn about our awesome services for making the world a better place
         </p>
       </span>
 
-      <div className="grid gap-x-40 gap-y-[3.75rem] grid-cols-2 place-items-center">
+      <div className="grid gap-x-40 gap-y-[3.75rem] grid-cols-1 max-md:px-4 md:grid-cols-2 place-items-center">
         {services.map(({ id, body, icon, title, className }) => (
           <div key={id} className="flex gap-4 items-center">
             <IconContainer icon={icon} className={className} />

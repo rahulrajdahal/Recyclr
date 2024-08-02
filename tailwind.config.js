@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1660px",
+      },
       animation: {
         hover: "hover 3s ease-in-out infinite",
         hoversm: "hoversm 3s ease-in-out infinite",
