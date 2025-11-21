@@ -176,7 +176,7 @@ describe("Button Component test", () => {
         });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ color: "orange" });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot();
       });
     });
     describe("test size props", () => {
@@ -190,8 +190,8 @@ describe("Button Component test", () => {
           borderRadius: "0.5rem",
           fontSize: "1.125rem",
         });
-        expect(button).toMatchScreenshot();
-      });
+        await expect(button).toMatchScreenshot("large-size-button");
+      }, 1000);
 
       test("should render a button with medium size", async () => {
         const { getByRole } = await render(<Button size="md">Medium</Button>);
@@ -205,7 +205,7 @@ describe("Button Component test", () => {
           borderRadius: "0.375rem",
           fontSize: "1rem",
         });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("medium-size-button");
       });
 
       test("should render a button with small size", async () => {
@@ -220,7 +220,7 @@ describe("Button Component test", () => {
           borderRadius: "0.25rem",
           fontSize: "0.875rem",
         });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("small-size-button");
       });
     });
   });
