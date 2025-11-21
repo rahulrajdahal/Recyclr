@@ -1,6 +1,6 @@
 import { Logo, Menu } from "../assets/icons";
 import { useWindowSize } from "../hooks";
-import Button from "./Button";
+import Button from "./Button/Button";
 
 const links = [
   { id: 1, title: "Services" },

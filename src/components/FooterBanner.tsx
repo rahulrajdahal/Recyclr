@@ -13,15 +13,15 @@ import {
   Toy,
   TrashWide,
 } from "../assets/illustrations";
-import Button from "./Button";
+import Button from "./Button/Button";
 
 export default function FooterBanner() {
   return (
-    <div className="px-[4.65%] md:px-[12.5%] bg-[#4fd2551a] flex flex-col md:gap-[8.16rem] pt-[12.5rem]">
-      <div className="flex flex-col md:flex-row w-full gap-20 max-md:min-h-[40rem] md:gap-[9.81rem] ">
-        <div className="flex flex-col gap-10 md:max-w-[27.125rem] w-full">
+    <div className="px-[4.65%] md:px-[12.5%] bg-[#4fd2551a] flex flex-col md:gap-[8.16rem] pt-50">
+      <div className="flex flex-col md:flex-row w-full gap-20 max-md:min-h-160 md:gap-[9.81rem] ">
+        <div className="flex flex-col gap-10 md:max-w-108.5 w-full">
           <span className="flex flex-col w-full gap-4">
-            <strong className="text-[#333] text-3xl md:text-[4.5rem] font-bold md:leading-[5.25rem]">
+            <strong className="text-[#333] text-3xl md:text-[4.5rem] font-bold md:leading-21">
               Ready to Get Started?
             </strong>
             <p className="text-[#727272] text-base md:text-lg md:leading-6 font-medium">
@@ -39,21 +39,21 @@ export default function FooterBanner() {
             alt={"recyclr - clean bottles"}
             width={94}
             height={94}
-            className="w-[3.875rem] md:w-[5.875rem] animate-hover absolute -top-6 md:top-20 h-[3.875rem] md:h-[5.875rem]"
+            className="w-15.5 md:w-23.5 animate-hover absolute -top-6 md:top-20 h-15.5 md:h-23.5"
           />
           <img
             src={AppleBag}
             alt={"recyclr - apple bag"}
             width={110}
             height={110}
-            className="w-[3.875rem] md:w-[6.875rem] animate-hovermd  left-[3.69rem] md:left-[5.69rem] absolute max-md:top-16 md:-bottom-12 h-[3.875rem] md:h-[6.875rem]"
+            className="w-15.5 md:w-27.5 animate-hovermd  left-[3.69rem] md:left-[5.69rem] absolute max-md:top-16 md:-bottom-12 h-15.5 md:h-27.5"
           />
           <img
             src={Plastic}
             alt={"recyclr - plastic"}
             width={52}
             height={52}
-            className="w-[2.25rem] md:w-[3.25rem] animate-hoversm left-[8.45rem] md:left-[16.45rem] relative top-2 md:top-[2.81rem] h-[2.25rem] md:h-[3.25rem]"
+            className="w-9 md:w-13 animate-hoversm left-[8.45rem] md:left-[16.45rem] relative top-2 md:top-[2.81rem] h-9 md:h-13"
           />
           <img
             src={Sandwich}
@@ -67,7 +67,7 @@ export default function FooterBanner() {
             alt={"recyclr - knuckles"}
             width={66}
             height={66}
-            className="w-[3.125rem] md:w-[4.125rem] animate-hover  left-[6.96rem] md:left-[6.96rem] relative -top-10 h-[3.125rem] md:h-[4.125rem]"
+            className="w-12.5 md:w-16.5 animate-hover  left-[6.96rem] md:left-[6.96rem] relative -top-10 h-12.5 md:h-16.5"
           />
 
           <img
@@ -87,14 +87,14 @@ export default function FooterBanner() {
             alt={"recyclr - toy"}
             width={100}
             height={100}
-            className="w-[3.25rem] md:w-[6.25rem] h-[3.25rem] md:h-[6.25rem]"
+            className="w-13 md:w-25 h-13 md:h-25"
           />
           <img
             src={TrashWide}
             alt={"recyclr - trash wide"}
             width={235}
             height={235}
-            className="w-[4.6875rem] h-[4.6875rem] md:w-[14.6875rem] md:h-[14.6875rem]"
+            className="w-18.75 h-18.75 md:w-58.75 md:h-58.75"
           />
         </span>
 
@@ -111,21 +111,21 @@ export default function FooterBanner() {
             alt={"recyclr - recycling box"}
             width={106}
             height={106}
-            className="w-[3.625rem] h-[3.625rem] md:w-[6.625rem] md:h-[6.625rem]"
+            className="w-14.5 h-14.5 md:w-26.5 md:h-26.5"
           />
           <img
             src={Bottles}
             alt={"recyclr - bottles"}
             width={118}
             height={118}
-            className="w-[3.375rem] h-[3.375rem] md:w-[7.375rem] md:h-[7.375rem]"
+            className="w-13.5 h-13.5 md:w-29.5 md:h-29.5"
           />
           <img
             src={Juice}
             alt={"recyclr - juice"}
             width={70}
             height={70}
-            className="w-[2.375rem] h-[2.375rem] md:w-[4.375rem] md:h-[4.375rem]"
+            className="w-9.5 h-9.5 md:w-17.5 md:h-17.5"
           />
         </span>
 
@@ -134,7 +134,7 @@ export default function FooterBanner() {
           alt={"recyclr - trash wide"}
           width={176}
           height={176}
-          className="w-[8rem] h-[8rem] md:w-[11rem] md:h-[11rem]"
+          className="w-32 h-32 md:w-44 md:h-44"
         />
       </div>
     </div>
