@@ -1,6 +1,6 @@
 import React from "react";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+type ButtonProps = React.ComponentProps<"button"> & {
   /** Background color of the button */
   bg?: string;
   /** Text color of the button */
@@ -37,13 +37,13 @@ export default function Button({
   const sizeStyle = () => {
     switch (size) {
       case "sm":
-        return `px-2.75 py-2.5 rounded-sm ${textSizeStyle()}`;
+        return `px-2.75 py-1.25 rounded-sm ${textSizeStyle()}`;
       case "md":
         return `px-5.5 py-2.5 rounded-md ${textSizeStyle()}`;
       case "lg":
         return `px-11 rounded-lg py-5 ${textSizeStyle()}`;
       default:
-        return `px-2.75 py-2.5 rounded-sm ${textSizeStyle()}`;
+        return `px-2.75 py-1.25 rounded-sm ${textSizeStyle()}`;
     }
   };
 

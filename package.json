@@ -10,13 +10,16 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test-storybook": "vitest --project=storybook"
+    "test-storybook": "vitest --project=storybook",
+    "test:unit": "vitest"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
+    "@testing-library/react": "^16.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.6"
+    "react-router-dom": "^7.9.6",
+    "vitest-browser-react": "^2.0.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",

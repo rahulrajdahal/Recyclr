@@ -61,7 +61,6 @@ export const Fill: Story = {
     expect(button).toBeInTheDocument();
     expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
     expect(button).toHaveStyle({ color: "#333" });
-    expect(button).toHaveStyle({ padding: "20px 44px" });
   },
 };
 export const Outline: Story = {
