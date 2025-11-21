@@ -9,6 +9,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "fill" | "outline" | "text";
   /** Size of the button */
   size?: "sm" | "md" | "lg";
+  /** Is the button disabled? */
+  disabled?: boolean;
 };
 
 export default function Button({
@@ -16,6 +18,7 @@ export default function Button({
   color = "#333",
   variant = "fill",
   size = "lg",
+  disabled = false,
   ...props
 }: ButtonProps) {
   const textSizeStyle = () => {
@@ -34,23 +37,30 @@ export default function Button({
   const sizeStyle = () => {
     switch (size) {
       case "sm":
-        return `px-2.75 py-2.5 ${textSizeStyle()}`;
+        return `px-2.75 py-2.5 rounded-sm ${textSizeStyle()}`;
       case "md":
-        return `px-5.5 py-2.5 ${textSizeStyle()}`;
+        return `px-5.5 py-2.5 rounded-md ${textSizeStyle()}`;
       case "lg":
-        return `px-11 py-5 ${textSizeStyle()}`;
+        return `px-11 rounded-lg py-5 ${textSizeStyle()}`;
       default:
-        return `px-2.75 py-2.5 ${textSizeStyle()}`;
+        return `px-2.75 py-2.5 rounded-sm ${textSizeStyle()}`;
     }
   };
 
   const variantStyle = () => {
     switch (variant) {
       case "fill":
+        if (disabled) {
+          bg = "#a7a7a7";
+        }
         return `${sizeStyle()}`;
       case "outline":
         bg = "transparent";
-        color = color === "#333" ? "#4FD255" : color;
+        if (disabled) {
+          color = "#a7a7a7";
+        } else {
+          color = color === "#333" ? "#4FD255" : color;
+        }
         return `${sizeStyle()} border`;
       case "text":
         color = "#4FD255";
@@ -65,7 +75,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`${variantStyle()} rounded-[0.875rem] hover:cursor-pointer leading-normal font-semibold ${
+      className={`${variantStyle()}  disabled:cursor-not-allowed  hover:cursor-pointer leading-normal font-semibold ${
         props?.className
       }`}
       style={{
@@ -74,6 +84,8 @@ export default function Button({
         color: color ?? props.style?.color,
         borderColor: variant === "outline" ? color : props.style?.borderColor,
       }}
+      disabled={disabled}
+      aria-disabled={disabled}
     >
       {props.children}
     </button>

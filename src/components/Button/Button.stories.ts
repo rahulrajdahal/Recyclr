@@ -16,11 +16,18 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    bg: { control: "color" },
+    bg: {
+      control: "color",
+      table: {
+        defaultValue: {
+          summary: "#4FD255",
+        },
+      },
+    },
     color: { control: "color" },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-  args: { onClick: fn() },
+  args: { onClick: fn(), disabled: false },
 } satisfies Meta<typeof Button>;
 
 export default meta;
