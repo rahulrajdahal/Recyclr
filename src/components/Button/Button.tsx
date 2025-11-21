@@ -30,7 +30,7 @@ export default function Button({
       case "lg":
         return "text-lg";
       default:
-        return "text-sm";
+        return "text-lg";
     }
   };
 
@@ -72,7 +72,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`${variantStyle()}  disabled:cursor-not-allowed  hover:cursor-pointer leading-normal font-semibold ${
+      className={`${variantStyle()} disabled:cursor-not-allowed  hover:cursor-pointer leading-normal font-semibold ${
         props?.className
       }`}
       style={{
