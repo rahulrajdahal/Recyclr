@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { fn } from "storybook/test";
+import { expect, fn } from "storybook/test";
 
 import Button from "./Button";
 
@@ -38,22 +38,58 @@ export const Default: Story = {
   args: {
     children: "Button",
   },
+  play: async ({ canvas }) => {
+    const button = canvas.getByRole("button", {
+      name: /button/i,
+    });
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
+    expect(button).toHaveStyle({ color: "#333" });
+    expect(button).toHaveStyle({ padding: "20px 44px" });
+  },
 };
 export const Fill: Story = {
   args: {
     children: "Button",
     variant: "fill",
+    size: "sm",
+  },
+  play: async ({ canvas }) => {
+    const button = canvas.getByRole("button", {
+      name: /button/i,
+    });
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
+    expect(button).toHaveStyle({ color: "#333" });
+    expect(button).toHaveStyle({ padding: "20px 44px" });
   },
 };
 export const Outline: Story = {
   args: {
     children: "Button",
     variant: "outline",
+    color: "#333",
   },
 };
 export const Text: Story = {
   args: {
     children: "Button",
     variant: "text",
+    color: "#333",
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: "Button",
+    variant: "fill",
+    disabled: true,
+  },
+  play: async ({ canvas }) => {
+    const button = canvas.getByRole("button", {
+      name: /button/i,
+    });
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveStyle({ backgroundColor: "#a7a7a7" });
   },
 };

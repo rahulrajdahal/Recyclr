@@ -58,12 +58,9 @@ export default function Button({
         bg = "transparent";
         if (disabled) {
           color = "#a7a7a7";
-        } else {
-          color = color === "#333" ? "#4FD255" : color;
         }
         return `${sizeStyle()} border`;
       case "text":
-        color = "#4FD255";
         bg = "transparent";
         return `${sizeStyle()}`;
 
