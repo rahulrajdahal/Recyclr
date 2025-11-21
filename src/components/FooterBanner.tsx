@@ -30,7 +30,7 @@ export default function FooterBanner() {
             </p>
           </span>
 
-          <Button />
+          <Button>Start Recycling</Button>
         </div>
 
         <div className="flex items-center flex-row w-full relative justify-between">

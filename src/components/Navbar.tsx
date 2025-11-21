@@ -47,7 +47,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <Button />
+          <Button>Start Recycling</Button>
         </div>
       )}
     </nav>
