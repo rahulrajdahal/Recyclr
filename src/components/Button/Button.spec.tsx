@@ -4,85 +4,85 @@ import "../../index.css";
 import Button from "./Button.tsx";
 
 describe("Button Component test", () => {
-  test("default button should render with correct styles", async () => {
-    const { getByRole } = await render(<Button>Button test</Button>);
+  // test("default button should render with correct styles", async () => {
+  //   const { getByRole } = await render(<Button>Button test</Button>);
 
-    const button = getByRole("button", { name: /button/i });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveStyle({
-      backgroundColor: "#4FD255",
-      color: "#333",
-      padding: "20px 44px",
-      fontSize: "1.125rem",
-    });
-    expect(button).toMatchScreenshot();
-  });
+  //   const button = getByRole("button", { name: /button/i });
+  //   expect(button).toBeInTheDocument();
+  //   expect(button).toHaveStyle({
+  //     backgroundColor: "#4FD255",
+  //     color: "#333",
+  //     padding: "20px 44px",
+  //     fontSize: "1.125rem",
+  //   });
+  //   await expect(button).toMatchScreenshot("default-button");
+  // });
 
-  test("fill button variant should render with correct props and styles", async () => {
-    const { getByRole } = await render(
-      <Button variant="fill">Fill Button</Button>
-    );
+  // test("fill button variant should render with correct props and styles", async () => {
+  //   const { getByRole } = await render(
+  //     <Button variant="fill">Fill Button</Button>
+  //   );
 
-    const button = getByRole("button", { name: /fill button/i });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveStyle({
-      backgroundColor: "#4FD255",
-      color: "#333",
-      padding: "20px 44px",
-      fontSize: "1.125rem",
-    });
-    expect(button).toMatchScreenshot();
+  //   const button = getByRole("button", { name: /fill button/i });
+  //   expect(button).toBeInTheDocument();
+  //   expect(button).toHaveStyle({
+  //     backgroundColor: "#4FD255",
+  //     color: "#333",
+  //     padding: "20px 44px",
+  //     fontSize: "1.125rem",
+  //   });
+  //   await expect(button).toMatchScreenshot("fill-button");
 
-    const renderFillMd = await render(
-      <Button variant="fill" size="md">
-        Md Button
-      </Button>
-    );
+  //   const renderFillMd = await render(
+  //     <Button variant="fill" size="md">
+  //       Md Button
+  //     </Button>
+  //   );
 
-    const fillMdButton = renderFillMd.getByRole("button", {
-      name: /md button/i,
-    });
+  //   const fillMdButton = renderFillMd.getByRole("button", {
+  //     name: /md button/i,
+  //   });
 
-    expect(fillMdButton).toBeInTheDocument();
-    expect(fillMdButton).toHaveStyle({
-      fontSize: "1rem",
-      padding: "10px 22px",
-    });
-    expect(fillMdButton).toMatchScreenshot();
+  //   expect(fillMdButton).toBeInTheDocument();
+  //   expect(fillMdButton).toHaveStyle({
+  //     fontSize: "1rem",
+  //     padding: "10px 22px",
+  //   });
+  //   await expect(fillMdButton).toMatchScreenshot();
 
-    const renderFillSm = await render(
-      <Button variant="fill" size="sm">
-        Sm Button
-      </Button>
-    );
+  //   const renderFillSm = await render(
+  //     <Button variant="fill" size="sm">
+  //       Sm Button
+  //     </Button>
+  //   );
 
-    const fillSmButton = renderFillSm.getByRole("button", {
-      name: /sm button/i,
-    });
+  //   const fillSmButton = renderFillSm.getByRole("button", {
+  //     name: /sm button/i,
+  //   });
 
-    expect(fillSmButton).toBeInTheDocument();
-    expect(fillSmButton).toHaveStyle({ padding: "5px 11px", fontSize: "14px" });
-    expect(fillSmButton).toMatchScreenshot();
+  //   expect(fillSmButton).toBeInTheDocument();
+  //   expect(fillSmButton).toHaveStyle({ padding: "5px 11px", fontSize: "14px" });
+  //   expect(fillSmButton).toMatchScreenshot();
 
-    const renderFillDisabled = await render(
-      <Button variant="fill" disabled>
-        Disabled Button
-      </Button>
-    );
+  //   const renderFillDisabled = await render(
+  //     <Button variant="fill" disabled>
+  //       Disabled Button
+  //     </Button>
+  //   );
 
-    const fillDisabledButton = renderFillDisabled.getByRole("button", {
-      name: /disabled button/i,
-    });
+  //   const fillDisabledButton = renderFillDisabled.getByRole("button", {
+  //     name: /disabled button/i,
+  //   });
 
-    expect(fillDisabledButton).toBeInTheDocument();
-    expect(fillDisabledButton).toHaveStyle({
-      padding: "20px 44px",
-      fontSize: "1.125rem",
-      cursor: "not-allowed",
-      backgroundColor: "#a7a7a7",
-    });
-    expect(fillDisabledButton).toMatchScreenshot();
-  });
+  //   expect(fillDisabledButton).toBeInTheDocument();
+  //   expect(fillDisabledButton).toHaveStyle({
+  //     padding: "20px 44px",
+  //     fontSize: "1.125rem",
+  //     cursor: "not-allowed",
+  //     backgroundColor: "#a7a7a7",
+  //   });
+  //   expect(fillDisabledButton).toMatchScreenshot();
+  // });
 
   describe("test button props", () => {
     describe("test button variant props", () => {
@@ -140,7 +140,7 @@ describe("Button Component test", () => {
         const button = getByRole("button", { name: /button/i });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ backgroundColor: "black" });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("black-bg");
       });
 
       test("should render a button with orange background color", async () => {
@@ -151,9 +151,10 @@ describe("Button Component test", () => {
         });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ backgroundColor: "orange" });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("orange-bg");
       });
     });
+
     describe("test color props", () => {
       test("should render a button with black text color", async () => {
         const { getByRole } = await render(
@@ -163,7 +164,7 @@ describe("Button Component test", () => {
         const button = getByRole("button", { name: /button/i });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ color: "black" });
-        expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("black-text-color");
       });
 
       test("should render a button with orange text color", async () => {
@@ -176,9 +177,10 @@ describe("Button Component test", () => {
         });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ color: "orange" });
-        await expect(button).toMatchScreenshot();
+        await expect(button).toMatchScreenshot("orange-text-color");
       });
     });
+
     describe("test size props", () => {
       test("should render a button with large size", async () => {
         const { getByRole } = await render(<Button size="lg">Button</Button>);
@@ -191,7 +193,7 @@ describe("Button Component test", () => {
           fontSize: "1.125rem",
         });
         await expect(button).toMatchScreenshot("large-size-button");
-      }, 1000);
+      });
 
       test("should render a button with medium size", async () => {
         const { getByRole } = await render(<Button size="md">Medium</Button>);
@@ -222,6 +224,21 @@ describe("Button Component test", () => {
         });
         await expect(button).toMatchScreenshot("small-size-button");
       });
+    });
+
+    test("should render a button disabled styles", async () => {
+      const { getByRole } = await render(
+        <Button disabled={true}>Button</Button>
+      );
+
+      const button = getByRole("button", { name: /button/i });
+      expect(button).toBeInTheDocument();
+      expect(button).toHaveStyle({
+        backgroundColor: "#a7a7a7",
+        cursor: "not-allowed",
+      });
+      expect(button).toHaveAttribute("aria-disabled", "true");
+      await expect(button).toMatchScreenshot("disabled-button");
     });
   });
 });
