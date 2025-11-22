@@ -1,41 +1,77 @@
-type IconContainerProps = React.DetailedHTMLProps<
+import React from "react";
+
+type BaseIconContainerProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > & {
-  /** icon in the IconContainer */
-  icon: string;
-  /** props for icon | Image Props */
-  imgProps?: React.DetailedHTMLProps<
-    React.ImgHTMLAttributes<HTMLImageElement>,
-    HTMLImageElement
-  >;
   /** background color of the icon container */
   bg?: string;
-  /** color of the icon */
-  color?: string;
 };
+
+type IconStringProps = BaseIconContainerProps &
+  IconProps & {
+    imgProps?: Omit<IconProps, "icon" | "color">;
+  };
+
+type IconNodeProps = BaseIconContainerProps & {
+  /** icon in the IconContainer */
+  icon: React.ReactNode;
+};
+
+type IconContainerProps = IconStringProps | IconNodeProps;
+
 export default function IconContainer({
   icon,
-  imgProps,
   bg = "#ea433533",
-  color = "#EA4335",
   ...props
 }: IconContainerProps) {
+  const isIconString = typeof icon === "string";
+
+  const renderIcon = () => {
+    if (isIconString) {
+      return (
+        <Icon
+          icon={icon}
+          color={props?.color}
+          {...("imgProps" in props ? props?.imgProps : null)}
+        />
+      );
+    } else {
+      return icon;
+    }
+  };
+
   return (
     <div
       {...props}
       className={`rounded-[1.75rem] p-[1.62rem] ${props.className ?? ""}`}
       style={{ ...props.style, backgroundColor: bg }}
     >
-      <img
-        {...imgProps}
-        src={icon}
-        alt={imgProps?.alt ?? "recyclr - delete bin"}
-        width={imgProps?.width ?? 32}
-        height={imgProps?.height ?? 32}
-        className={`w-8 h-8 ${imgProps?.className ?? ""}`}
-        style={{ ...imgProps?.style, color }}
-      />
+      {renderIcon()}
     </div>
   );
 }
+
+type IconProps = React.DetailedHTMLProps<
+  React.ImgHTMLAttributes<HTMLImageElement>,
+  HTMLImageElement
+> & {
+  /** icon in the IconContainer */
+  icon: string;
+  /** color of the icon */
+  color?: string;
+};
+
+const Icon = ({ icon, color, ...props }: IconProps) => {
+  return (
+    <img
+      {...props}
+      src={icon}
+      alt={props?.alt ?? "recyclr - delete bin"}
+      width={props?.width ?? 32}
+      height={props?.height ?? 32}
+      className={`w-8 h-8 ${props?.className ?? ""}`}
+      style={{ ...props?.style, color }}
+    />
+  );
+};
