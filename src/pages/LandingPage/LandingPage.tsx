@@ -1,14 +1,12 @@
-import { Footer, FooterBanner, Navbar } from "../../components";
-import Hero from "./Hero";
-import OurServices from "./OurServices";
+import { Footer } from "../../components";
 
 export default function LandingPage() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <OurServices />
-      <FooterBanner />
+      <FooterBanner /> */}
       <Footer />
     </>
   );

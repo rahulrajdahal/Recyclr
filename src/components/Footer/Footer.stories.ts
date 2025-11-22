@@ -6,33 +6,12 @@ import Footer from "./Footer";
 const meta = {
   title: "Components/Footer",
   component: Footer,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
-  },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {},
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-  args: {},
 } satisfies Meta<typeof Footer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Default: Story = {
-  //   args: {
-  //     children: "Button",
-  //   },
-  //   play: async ({ canvas }) => {
-  //     const button = canvas.getByRole("button", {
-  //       name: /button/i,
-  //     });
-  //     expect(button).toBeInTheDocument();
-  //     expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
-  //     expect(button).toHaveStyle({ color: "#333" });
-  //     expect(button).toHaveStyle({ padding: "20px 44px" });
-  //   },
-};
+export const Default: Story = {};

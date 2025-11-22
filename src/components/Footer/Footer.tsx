@@ -8,8 +8,11 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#121212] px-[4.65%] xl:px-[12.5%] w-full flex py-10 items-center justify-between flex-wrap">
-      <p className="text-white text-lg leading-6 font-semibold">
+    <footer
+      data-testid="test-footer"
+      className="bg-[#121212] px-[4.65%] xl:px-[12.5%] w-full flex py-10 items-start justify-between flex-col md:items-center sm:flex-row gap-10"
+    >
+      <p className="text-white text-base lg:text-lg leading-6 font-semibold">
         Copyright. 2020. All Rights Reserved.
       </p>
 
@@ -19,9 +22,9 @@ export default function Footer() {
             key={id}
             src={icon}
             alt={title}
-            width={24}
-            height={24}
-            className="w-full"
+            width={48}
+            height={48}
+            className="w-full h-3 md:h-6"
           />
         ))}
       </div>
