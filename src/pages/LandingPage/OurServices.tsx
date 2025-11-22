@@ -1,28 +1,29 @@
-import { ArrowUpDown, DeleteBin, UserSmile } from "../../assets/icons";
+// import { DeleteBin } from "../../assets/icons";
+import { DeleteBin } from "../../assets/icons";
 import { IconContainer } from "../../components";
 
 const services = [
   {
     id: 1,
-    icon: DeleteBin,
+    icon: <DeleteBin color="#EA4335" />,
     title: "Reduce",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     className: "bg-[#ea433533]",
   },
-  {
-    id: 2,
-    icon: UserSmile,
-    title: "Reuse",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    className: "bg-[#4285f433]",
-  },
-  {
-    id: 3,
-    icon: ArrowUpDown,
-    title: "Recycle",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    className: "bg-[#fbbc0533]",
-  },
+  // {
+  //   id: 2,
+  //   icon: UserSmile,
+  //   title: "Reuse",
+  //   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  //   className: "bg-[#4285f433]",
+  // },
+  // {
+  //   id: 3,
+  //   icon: ArrowUpDown,
+  //   title: "Recycle",
+  //   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+  //   className: "bg-[#fbbc0533]",
+  // },
 ];
 export default function OurServices() {
   return (
