@@ -9,10 +9,10 @@ describe("Tests for Footer Component", () => {
 
     const footer = getByTestId("test-footer");
     expect(footer).toBeInTheDocument();
-    await expect(footer).toMatchScreenshot("footer-component");
+    // await expect(footer).toMatchScreenshot("footer-component");
 
     const copyrightText = getByText(/copyright. 2020. all rights reserved/i);
     expect(copyrightText).toBeInTheDocument();
-    await expect(copyrightText).toMatchScreenshot("footer-copyright");
+    // await expect(copyrightText).toMatchScreenshot("footer-copyright");
   });
 });

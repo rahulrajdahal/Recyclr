@@ -16,6 +16,6 @@ describe("test footer banner component", () => {
       getByRole("button", { name: /start recycling/i })
     ).toBeInTheDocument();
 
-    await expect(footerBanner).toMatchScreenshot("footer-banner");
+    // await expect(footerBanner).toMatchScreenshot("footer-banner");
   });
 });

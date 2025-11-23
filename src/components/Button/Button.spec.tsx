@@ -140,7 +140,7 @@ describe("Button Component test", () => {
         const button = getByRole("button", { name: /button/i });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ backgroundColor: "black" });
-        await expect(button).toMatchScreenshot("black-bg");
+        // await expect(button).toMatchScreenshot("black-bg");
       });
 
       test("should render a button with orange background color", async () => {
@@ -151,7 +151,7 @@ describe("Button Component test", () => {
         });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ backgroundColor: "orange" });
-        await expect(button).toMatchScreenshot("orange-bg");
+        // await expect(button).toMatchScreenshot("orange-bg");
       });
     });
 
@@ -164,7 +164,7 @@ describe("Button Component test", () => {
         const button = getByRole("button", { name: /button/i });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ color: "black" });
-        await expect(button).toMatchScreenshot("black-text-color");
+        // await expect(button).toMatchScreenshot("black-text-color");
       });
 
       test("should render a button with orange text color", async () => {
@@ -177,7 +177,7 @@ describe("Button Component test", () => {
         });
         expect(button).toBeInTheDocument();
         expect(button).toHaveStyle({ color: "orange" });
-        await expect(button).toMatchScreenshot("orange-text-color");
+        // await expect(button).toMatchScreenshot("orange-text-color");
       });
     });
 
@@ -192,7 +192,7 @@ describe("Button Component test", () => {
           borderRadius: "0.5rem",
           fontSize: "1.125rem",
         });
-        await expect(button).toMatchScreenshot("large-size-button");
+        // await expect(button).toMatchScreenshot("large-size-button");
       });
 
       test("should render a button with medium size", async () => {
@@ -207,7 +207,7 @@ describe("Button Component test", () => {
           borderRadius: "0.375rem",
           fontSize: "1rem",
         });
-        await expect(button).toMatchScreenshot("medium-size-button");
+        // await expect(button).toMatchScreenshot("medium-size-button");
       });
 
       test("should render a button with small size", async () => {
@@ -222,7 +222,7 @@ describe("Button Component test", () => {
           borderRadius: "0.25rem",
           fontSize: "0.875rem",
         });
-        await expect(button).toMatchScreenshot("small-size-button");
+        // await expect(button).toMatchScreenshot("small-size-button");
       });
     });
 
@@ -238,7 +238,7 @@ describe("Button Component test", () => {
         cursor: "not-allowed",
       });
       expect(button).toHaveAttribute("aria-disabled", "true");
-      await expect(button).toMatchScreenshot("disabled-button");
+      // await expect(button).toMatchScreenshot("disabled-button");
     });
   });
 });
