@@ -12,8 +12,8 @@ import {
   Sandwich,
   Toy,
   TrashWide,
-} from "../assets/illustrations";
-import Button from "./Button/Button";
+} from "../../assets/illustrations";
+import Button from "../Button/Button";
 
 export default function FooterBanner() {
   return (

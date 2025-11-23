@@ -17,8 +17,9 @@ export default function IconContainer({
 }: IconContainerProps) {
   return (
     <div
+      data-testid="recyclr-iconContainer"
       {...props}
-      className={`rounded-[1.75rem] p-[1.62rem] ${props.className ?? ""}`}
+      className={`rounded-[1.75rem] flex items-center justify-center p-[1.62rem] ${props.className ?? ""}`}
       style={{ ...props.style, backgroundColor: bg }}
     >
       {icon}

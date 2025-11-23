@@ -12,14 +12,14 @@ export default function Navbar() {
   const { width } = useWindowSize();
 
   return (
-    <nav className="sticky z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-[11.25rem] py-[3.75rem]">
+    <nav className="sticky py-15 z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-45">
       <div className="flex items-center gap-2">
         <img
           src={Logo}
           alt="recyclr - logo"
           width={30}
           height={30}
-          className="w-[1.875rem] h-[1.875rem]"
+          className="w-7.5 h-7.5"
         />
 
         <strong className="text-[#333] text-2xl leading-normal font-bold">
@@ -33,11 +33,11 @@ export default function Navbar() {
           alt="recyclr - menu"
           width={30}
           height={30}
-          className="w-[1.875rem] h-[1.875rem]"
+          className="w-7.5 h-7.5"
         />
       ) : (
-        <div className="flex items-center gap-[3.75rem]">
-          <ul className="flex gap-[3.75rem] items-center">
+        <div className="flex items-center gap-15">
+          <ul className="flex gap-15 items-center">
             {links.map(({ id, title }) => (
               <li
                 key={id}
