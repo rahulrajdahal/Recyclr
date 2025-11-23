@@ -1,12 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root,
 body,
-*,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@keyframes hoversm {
+}
+
+@theme {
+  --breakpoint-3xl: 1660px;
+  --animate-hoversm: hoversm 3s ease-in-out infinite;
+  --animate-hover: hover 3s ease-in-out infinite;
+  --animate-hovermd: hovermd 3s ease-in-out infinite;
+  @keyframes hoversm {
+    0%,
+    100% {
+      transform: translateY(15px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes hover {
+    0%,
+    100% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  @keyframes hovermd {
+    0%,
+    100% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
 }
