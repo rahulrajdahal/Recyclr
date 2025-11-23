@@ -1,5 +1,4 @@
-// import { DeleteBin } from "../../assets/icons";
-import { DeleteBin } from "../../assets/icons";
+import { ArrowUpDown, DeleteBin, UserSmile } from "../../assets/icons";
 import { IconContainer } from "../../components";
 
 const services = [
@@ -8,22 +7,22 @@ const services = [
     icon: <DeleteBin color="#EA4335" />,
     title: "Reduce",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    className: "bg-[#ea433533]",
+    bg: "#ea433533",
   },
-  // {
-  //   id: 2,
-  //   icon: UserSmile,
-  //   title: "Reuse",
-  //   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-  //   className: "bg-[#4285f433]",
-  // },
-  // {
-  //   id: 3,
-  //   icon: ArrowUpDown,
-  //   title: "Recycle",
-  //   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-  //   className: "bg-[#fbbc0533]",
-  // },
+  {
+    id: 2,
+    icon: <UserSmile color={"#234285F4"} />,
+    title: "Reuse",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    bg: "#4285f433",
+  },
+  {
+    id: 3,
+    icon: <ArrowUpDown color="#23FBBC05" />,
+    title: "Recycle",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    bg: "#fbbc0533",
+  },
 ];
 export default function OurServices() {
   return (
@@ -38,9 +37,9 @@ export default function OurServices() {
       </span>
 
       <div className="grid gap-x-40 gap-y-15 grid-cols-1 max-md:px-4 md:grid-cols-2 place-items-center">
-        {services.map(({ id, body, icon, title, className }) => (
+        {services.map(({ id, body, icon, title, bg }) => (
           <div key={id} className="flex gap-4 items-center">
-            <IconContainer icon={icon} className={className} />
+            <IconContainer icon={icon} bg={bg} />
             <span className="flex flex-col gap-2">
               <strong className="text-[#333] text-2xl leading-6 font-bold">
                 {title}

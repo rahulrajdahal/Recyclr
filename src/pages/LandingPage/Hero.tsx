@@ -36,12 +36,9 @@ export default function Hero() {
 
         <span className="flex gap-4 items-center">
           <IconContainer
-            icon={Mouse}
-            className="animate-hoversm  rounded-[1.1875rem] flex items-center justify-center bg-[#f3f3f3] !p-[1.13rem] max-w-[3.75rem] max-h-[3.75rem]"
-            imgProps={{
-              alt: "recyclr - scroll",
-              className: "w-6 h-6",
-            }}
+            icon={<Mouse color="#aaaaaa" />}
+            className="animate-bounce rounded-[1.1875rem] flex items-center justify-center p-[1.13rem]! max-w-15 max-h-15"
+            bg="#f3f3f3"
           />
           <p className="text-[#aaa] text-base md:text-lg leading-normal font-semibold">
             Scroll
