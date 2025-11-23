@@ -8,8 +8,11 @@
 <img src="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg" alt="Component Test Badge"/>
 </a> <a target="_blank" href="https://app.netlify.com/projects/recyclrr/deploys">
 <img src="https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status" alt="Netlify Deployment Badge"/>
+</a> <a target="_blank" href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-4FD255.svg" alt="MIT LICENSE"/>
 </a>
 </div>
+
 <p align="center">
 <em>Let’s save the world TOGETHER</em>
 </p>
