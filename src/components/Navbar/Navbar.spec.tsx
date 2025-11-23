@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 describe("test navbar component", () => {
   test("should render navbar with default props", async () => {
-    const { getByTestId, getByText, getByRole } = await render(<Navbar />);
+    const { getByTestId, getByText } = await render(<Navbar />);
 
     const navbar = getByTestId("recyclr-navbar");
     expect(navbar).toBeInTheDocument();

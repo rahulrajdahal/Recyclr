@@ -7,21 +7,21 @@ const services = [
     icon: <DeleteBin color="#EA4335" />,
     title: "Reduce",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    bg: "#ea433533",
+    bg: "#EA433533",
   },
   {
     id: 2,
-    icon: <UserSmile color={"#234285F4"} />,
+    icon: <UserSmile color={"#4285F4"} />,
     title: "Reuse",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    bg: "#4285f433",
+    bg: "#4285F433",
   },
   {
     id: 3,
-    icon: <ArrowUpDown color="#23FBBC05" />,
+    icon: <ArrowUpDown color="#FBBC05" />,
     title: "Recycle",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    bg: "#fbbc0533",
+    bg: "#FBBC0533",
   },
 ];
 export default function OurServices() {
@@ -50,6 +50,9 @@ export default function OurServices() {
             </span>
           </div>
         ))}
+        <a href="#home" className="font-bold text-lg text-[#4FD255]">
+          Learn more
+        </a>
       </div>
     </div>
   );
