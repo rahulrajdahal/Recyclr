@@ -1,6 +1,6 @@
-import { Logo, Menu } from "../assets/icons";
-import { useWindowSize } from "../hooks";
-import Button from "./Button/Button";
+import { Logo, Menu } from "../../assets/icons";
+import { useWindowSize } from "../../hooks";
+import Button from "../Button/Button";
 
 const links = [
   { id: 1, title: "Services" },
@@ -12,7 +12,10 @@ export default function Navbar() {
   const { width } = useWindowSize();
 
   return (
-    <nav className="sticky py-15 z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-45">
+    <nav
+      data-testid="recyclr-navbar"
+      className="sticky py-15 z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-45"
+    >
       <div className="flex items-center gap-2">
         <img
           src={Logo}
