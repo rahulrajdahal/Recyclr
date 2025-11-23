@@ -1,6 +1,6 @@
 # [Recyclr](https://recyclrr.netlify.app/). Let’s save the world TOGETHER
 
-[![Component test](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg)](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml)
+[![Component test](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg)](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml) [![Netlify Status](https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status)](https://app.netlify.com/projects/recyclrr/deploys)
 
 ## 🏗 Installation
 
