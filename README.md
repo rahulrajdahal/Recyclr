@@ -1,6 +1,6 @@
 <a href="https://recyclrr.netlify.app/" target="_blank" style="display:flex;gap:1rem;align-items:center;justify-content:center;">
 <img src="./public/logo.svg" width=64/>
-<p style="font-size:5rem;font-weight:bold;">Recyclr</p>
+<p style="font-size:5rem;font-weight:bold;color:#4FD255;">Recyclr</p>
 </a>
 
 <div align="center">
@@ -85,3 +85,6 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run build`   | Build your production site to `./dist/`.      |
 | `pnpm run preview` | Preview your build locally, before deploying. |
 | `pnpm run lint`    | Check all linting errors.                     |
+| `pnpm run test:unit`    | Run all unit tests.                     |
+| `pnpm run storybook`    | Start storybook documentation locally                     |
+| `pnpm run build-storybook`    | Build storybook for production                     |
