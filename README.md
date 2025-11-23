@@ -1,5 +1,7 @@
 # [Recyclr](https://recyclrr.netlify.app/). Let’s save the world TOGETHER
 
+[![Component test](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg)](https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml)
+
 ## 🏗 Installation
 
 ### 1. clone the repository

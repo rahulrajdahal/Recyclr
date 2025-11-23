@@ -10,6 +10,6 @@ describe("test navbar component", () => {
     expect(navbar).toBeInTheDocument();
 
     expect(getByText("Recyclr")).toBeInTheDocument();
-    // await expect(navbar).toMatchScreenshot("navbar");
+    await expect(navbar).toMatchScreenshot("navbar");
   });
 });
