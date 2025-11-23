@@ -17,7 +17,10 @@ import Button from "../Button/Button";
 
 export default function FooterBanner() {
   return (
-    <div className="px-[4.65%] md:px-[12.5%] bg-[#4fd2551a] flex flex-col md:gap-[8.16rem] pt-50">
+    <div
+      data-testid="recyclr-footerBanner"
+      className="px-[4.65%] md:px-[12.5%] bg-[#4fd2551a] flex flex-col md:gap-[8.16rem] pt-50"
+    >
       <div className="flex flex-col md:flex-row w-full gap-20 max-md:min-h-160 md:gap-[9.81rem] ">
         <div className="flex flex-col gap-10 md:max-w-108.5 w-full">
           <span className="flex flex-col w-full gap-4">
