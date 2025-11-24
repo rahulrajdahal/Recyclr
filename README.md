@@ -3,19 +3,16 @@
 <p style="font-size:5rem;font-weight:bold;color:#4FD255;">Recyclr</p>
 </a>
 
-<div align="center">
-<a traget="_blank" href="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml">
-<img src="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg" alt="Component Test Badge"/>
-</a> <a target="_blank" href="https://app.netlify.com/projects/recyclrr/deploys">
-<img src="https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status" alt="Netlify Deployment Badge"/>
-</a> <a target="_blank" href="https://opensource.org/licenses/MIT">
-<img src="https://img.shields.io/badge/License-MIT-4FD255.svg" alt="MIT LICENSE"/>
-</a>
-</div>
-
-<p align="center">
-<em>Let’s save the world TOGETHER</em>
+<p align="center" style="font-size:1.5rem; font-weight:500;">
+<em>Let’s save the world <b>TOGETHER</b></em>
 </p>
+
+<div align="center">
+<a traget="_blank" href="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml"> <img src="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg" alt="Component Test Badge"/>
+</a> <a target="_blank" href="https://app.netlify.com/projects/recyclrr/deploys"> <img src="https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status" alt="Netlify Deployment Badge"/></a> <a target="_blank" href="https://opensource.org/licenses/MIT">
+<img src="https://img.shields.io/badge/License-MIT-4FD255.svg" alt="MIT LICENSE"/>
+</a> <a target="_blank" href="https://github.com/rahulrajdahal/recyclr"><img src="https://img.shields.io/github/languages/top/rahulrajdahal/recyclr" alt="Top Language Used"/></a> <a target="_blank" href="https://github.com/rahulrajdahal/recyclr"><img src="https://img.shields.io/github/languages/code-size/rahulrajdahal/recyclr" alt="Code Size"/></a>
+</div>
 
 ## [Demo](https://recyclrr.netlify.app/)
 
