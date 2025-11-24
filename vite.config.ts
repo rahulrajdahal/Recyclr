@@ -40,6 +40,9 @@ export default defineConfig({
   test: {
     coverage: {
       provider: "v8",
+      reporter: ["text", "json-summary", "json", "html"],
+      reportOnFailure: true,
+      enabled: true,
     },
     projects: [
       {
