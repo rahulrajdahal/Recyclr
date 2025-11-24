@@ -1,4 +1,4 @@
-name: "Recyclr Coverage Test"
+name: "Coverage"
 on:
     push:
         branches: ["main"]
