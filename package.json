@@ -11,7 +11,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test-storybook": "vitest --project=storybook",
-    "test:unit": "vitest"
+    "test:unit": "vitest --project=unit",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
@@ -29,14 +30,14 @@
     "@storybook/addon-vitest": "^10.0.8",
     "@storybook/react-vite": "^10.0.8",
     "@types/node": "^24.10.1",
-    "@types/react": "^19.2.6",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.47.0",
-    "@typescript-eslint/parser": "^8.47.0",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
     "@vite-pwa/assets-generator": "^1.0.2",
     "@vitejs/plugin-react-swc": "^4.2.2",
-    "@vitest/browser-playwright": "^4.0.12",
-    "@vitest/coverage-v8": "^4.0.12",
+    "@vitest/browser-playwright": "^4.0.13",
+    "@vitest/coverage-v8": "^4.0.13",
     "autoprefixer": "^10.4.22",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
@@ -53,7 +54,7 @@
     "typescript": "^5.9.3",
     "vite": "^7.2.4",
     "vite-plugin-pwa": "^1.1.0",
-    "vitest": "^4.0.12"
+    "vitest": "^4.0.13"
   },
   "optionalDependencies": {
     "@img/sharp-win32-x64": "^0.34.5"
