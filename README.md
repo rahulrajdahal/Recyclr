@@ -1,7 +1,8 @@
+# Recyclr
+
 <div align="center">
-<a href="https://recyclrr.netlify.app/" target="_blank" style="display:flex;gap:1rem;align-items:center;justify-content:center;">
+<a href="https://recyclrr.netlify.app/" target="_blank">
 <img src="./public/logo.svg" width=64/>
-<p style="font-size:5rem;font-weight:bold;color:#4FD255;">Recyclr</p>
 </a>
 </div>
 
