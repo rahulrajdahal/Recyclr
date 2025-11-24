@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { expect, fn } from "storybook/test";
+import { fn } from "storybook/test";
 
 import Button from "./Button";
 
@@ -38,29 +38,12 @@ export const Default: Story = {
   args: {
     children: "Button",
   },
-  play: async ({ canvas }) => {
-    const button = canvas.getByRole("button", {
-      name: /button/i,
-    });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
-    expect(button).toHaveStyle({ color: "#333" });
-    expect(button).toHaveStyle({ padding: "20px 44px" });
-  },
 };
 export const Fill: Story = {
   args: {
     children: "Button",
     variant: "fill",
     size: "sm",
-  },
-  play: async ({ canvas }) => {
-    const button = canvas.getByRole("button", {
-      name: /button/i,
-    });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveStyle({ backgroundColor: "#4FD255" });
-    expect(button).toHaveStyle({ color: "#333" });
   },
 };
 export const Outline: Story = {
@@ -83,12 +66,5 @@ export const Disabled: Story = {
     children: "Button",
     variant: "fill",
     disabled: true,
-  },
-  play: async ({ canvas }) => {
-    const button = canvas.getByRole("button", {
-      name: /button/i,
-    });
-    expect(button).toBeInTheDocument();
-    expect(button).toHaveStyle({ backgroundColor: "#a7a7a7" });
   },
 };

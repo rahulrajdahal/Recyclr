@@ -8,8 +8,7 @@
 </p>
 
 <div align="center">
-<a traget="_blank" href="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml"> <img src="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg" alt="Component Test Badge"/>
-</a> <a target="_blank" href="https://app.netlify.com/projects/recyclrr/deploys"> <img src="https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status" alt="Netlify Deployment Badge"/></a> <a target="_blank" href="https://opensource.org/licenses/MIT">
+<a traget="_blank" href="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml"> <img src="https://github.com/rahulrajdahal/Recyclr/actions/workflows/unit-test.yaml/badge.svg" alt="Component Test Badge"/> </a> <a target="_blank" href="https://app.netlify.com/projects/recyclrr/deploys"> <img src="https://api.netlify.com/api/v1/badges/c550d786-53c7-4dad-9e59-d97eec1dd0b5/deploy-status" alt="Netlify Deployment Badge"/></a> <a target="_blank" href="https://opensource.org/licenses/MIT">
 <img src="https://img.shields.io/badge/License-MIT-4FD255.svg" alt="MIT LICENSE"/>
 </a> <a target="_blank" href="https://github.com/rahulrajdahal/recyclr"><img src="https://img.shields.io/github/languages/top/rahulrajdahal/recyclr" alt="Top Language Used"/></a> <a target="_blank" href="https://github.com/rahulrajdahal/recyclr"><img src="https://img.shields.io/github/languages/code-size/rahulrajdahal/recyclr" alt="Code Size"/></a>
 </div>
@@ -88,3 +87,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run test:unit`    | Run all unit tests.                     |
 | `pnpm run storybook`    | Start storybook documentation locally                     |
 | `pnpm run build-storybook`    | Build storybook for production                     |
+
+## LICENSE
+
+This project is under MIT license
