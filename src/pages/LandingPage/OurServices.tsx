@@ -26,7 +26,10 @@ const services = [
 ];
 export default function OurServices() {
   return (
-    <div className="flex mb-35 flex-col items-center gap-15 justify-center">
+    <div
+      id="services"
+      className="flex mb-35 flex-col items-center gap-15 justify-center"
+    >
       <span className="flex flex-col gap-3 items-center">
         <strong className="text-[#333] text-center text-5xl leading-12 font-bold">
           Our Services

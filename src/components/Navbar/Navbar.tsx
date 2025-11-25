@@ -44,12 +44,13 @@ export default function Navbar() {
         <div className="flex items-center gap-15">
           <ul className="flex gap-15 items-center">
             {links.map(({ id, title }) => (
-              <li
+              <a
+                href={`#${title.toLowerCase()}`}
                 key={id}
                 className="text-[#333] text-lg leading-normal font-semibold"
               >
                 {title}
-              </li>
+              </a>
             ))}
           </ul>
           <a href={"#contact"}>
