@@ -22,7 +22,10 @@ export default function FooterBanner() {
       className="px-[4.65%] md:px-[12.5%] bg-[#4fd2551a] flex flex-col md:gap-[8.16rem] pt-50"
     >
       <div className="flex flex-col md:flex-row w-full gap-20 max-md:min-h-160 md:gap-[9.81rem] ">
-        <div className="flex flex-col gap-10 md:max-w-108.5 w-full">
+        <div
+          id="contact"
+          className="flex flex-col gap-10 md:max-w-108.5 w-full"
+        >
           <span className="flex flex-col w-full gap-4">
             <strong className="text-[#333] text-3xl md:text-[4.5rem] font-bold md:leading-21">
               Ready to Get Started?

@@ -16,7 +16,7 @@ export default function Navbar() {
       data-testid="recyclr-navbar"
       className="sticky py-15 z-50 top-0 bg-white px-[12.5%] flex items-center justify-between h-full w-full max-h-45"
     >
-      <div className="flex items-center gap-2">
+      <a href={"#main"} className="flex items-center gap-2">
         <img
           src={Logo}
           alt="recyclr - logo"
@@ -28,16 +28,18 @@ export default function Navbar() {
         <strong className="text-[#333] text-2xl leading-normal font-bold">
           Recyclr
         </strong>
-      </div>
+      </a>
 
       {width < 960 ? (
-        <img
-          src={Menu}
-          alt="recyclr - menu"
-          width={30}
-          height={30}
-          className="w-7.5 h-7.5"
-        />
+        <a href="#home">
+          <img
+            src={Menu}
+            alt="recyclr - menu"
+            width={30}
+            height={30}
+            className="w-7.5 h-7.5"
+          />
+        </a>
       ) : (
         <div className="flex items-center gap-15">
           <ul className="flex gap-15 items-center">
@@ -50,7 +52,9 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <Button>Start Recycling</Button>
+          <a href={"#contact"}>
+            <Button>Start Recycling</Button>
+          </a>
         </div>
       )}
     </nav>

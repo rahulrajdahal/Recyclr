@@ -7,15 +7,18 @@ export default function Hero() {
   const { width } = useWindowSize();
 
   return (
-    <div className="flex relative gap-[8.48rem] px-[12.5%] mb-[8.74rem]">
-      <div className="w-full flex gap-10 md:gap-[11.25rem] flex-col max-w-[41.4375rem]">
+    <section
+      id="main"
+      className="flex relative gap-[8.48rem] px-[12.5%] mb-[8.74rem]"
+    >
+      <div className="w-full flex gap-10 md:gap-45 flex-col max-w-165.75">
         <span className="flex flex-col gap-5">
           <strong
             data-greet="Hey"
-            className="before:content-[attr(data-greet)] before:text-base lg:before:text-2xl lg:before:leading-5  before:block lg:before:-mb-10 before:ml-1 text-[#333] text-3xl lg:text-[4.5rem] font-bold lg:leading-[8.125rem]"
+            className="before:content-[attr(data-greet)] before:text-base lg:before:text-2xl lg:before:leading-5  before:block lg:before:-mb-10 before:ml-1 text-[#333] text-3xl lg:text-[4.5rem] font-bold lg:leading-32.5"
           >
             Let’s save the world{" "}
-            <span className="text-[#4FD255] text-6xl md:text-[8.375rem] uppercase md:leading-[8.125rem] font-extrabold">
+            <span className="text-[#4FD255] text-6xl md:text-[8.375rem] uppercase md:leading-32.5 font-extrabold">
               TOGETHER
             </span>
           </strong>
@@ -52,9 +55,9 @@ export default function Hero() {
           alt="recyclr - hero"
           width={840.48}
           height={591.15}
-          className="max-w-[52.53019rem] absolute right-10 xl:max-3xl:right-2 xl:max-3xl:w-fit xl:max-3xl:h-[20rem] w-full max-h-[36.94713rem]"
+          className="max-w-[52.53019rem] absolute right-10 xl:max-3xl:right-2 xl:max-3xl:w-fit xl:max-3xl:h-80 w-full max-h-[36.94713rem]"
         />
       )}
-    </div>
+    </section>
   );
 }
