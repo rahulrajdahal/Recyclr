@@ -88,7 +88,3 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run test:unit`    | Run all unit tests.                     |
 | `pnpm run storybook`    | Start storybook documentation locally                     |
 | `pnpm run build-storybook`    | Build storybook for production                     |
-
-## LICENSE
-
-This project is under MIT license
